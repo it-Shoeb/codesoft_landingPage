@@ -1,0 +1,48 @@
+.image{
+    position: absolute;
+    z-index: -2;
+}
+
+a{
+    transition: .2s;
+}
+
+.wrapper {
+    color: white;
+    transition: 2s;
+}
+
+.wrapper h1:hover, .wrapper h3:hover, .wrapper p:hover{
+    scale: 1.01;
+    background-color: rgba(0, 0, 0, 0.521);
+    display: block;
+    border-radius: 5px;
+}
+
+.wrapper::after{
+    content:">";
+    padding: 10px;
+    position: absolute;
+    bottom: 50px;
+    transform: rotate(90deg);
+    scale: 2;
+    animation: jump infinite 5s linear;
+}
+
+@keyframes jump {
+    10%{
+        bottom: 50px;
+    }
+    25%{
+        bottom: 30px;
+    }
+    50%{
+        bottom: 50px;
+    }
+    75%{
+        bottom: 40px;
+    }
+    100%{
+        bottom: 50px;
+    }
+}

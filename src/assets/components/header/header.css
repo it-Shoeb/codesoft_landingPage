@@ -1,0 +1,5 @@
+header{
+    backdrop-filter: blur(20px);
+    color: white;
+    z-index: 2;
+}

@@ -1,0 +1,49 @@
+.card{
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 100px;
+    background-color: lightgreen;
+    top: -50px;
+    right: -50px;
+    opacity: 0;
+    transition: .5s;
+    box-shadow: 1px 1px 30px limegreen;
+    border: lightgreen;
+    z-index: -2;
+}
+
+.card:hover::before{
+    top: -30px;
+    right: -30px;
+    opacity: .5;
+    transition: .2s;
+}
+
+.card::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 100px;
+    background-color: lightgreen;
+    left: -50px;
+    bottom: -50px;
+    opacity: 0;
+    transition: .5s;
+    box-shadow: 1px 1px 20px limegreen;
+    border: lightgreen;
+}
+
+.card:hover::after{
+    left: 30px;
+    right: -30px;
+    opacity: .5;
+    transition: .2s;
+}

@@ -1,0 +1,10 @@
+body{
+    animation: anime 5s forwards;
+    opacity: 0;
+}
+
+@keyframes anime{
+    to{
+        opacity: 1;
+    }
+}
